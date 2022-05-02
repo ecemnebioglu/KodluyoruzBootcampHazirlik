@@ -18,11 +18,11 @@ public class Main {
                 frecuency[i] = count;
             }
         }
-        System.out.println("Dizi : "+Arrays.toString(arr));
+        System.out.println("Dizi : " + Arrays.toString(arr));
         System.out.println("Tekrar Sayıları");
-        for (int i =0; i<frecuency.length;i++){
-            if (frecuency[i]!=visit){
-                System.out.println(arr[i]+" sayısı "+frecuency[i]+" kere tekrar edildi. ");
+        for (int i = 0; i < frecuency.length; i++){
+            if (frecuency[i] != visit){
+                System.out.println(arr[i] + " sayısı " + frecuency[i] + " kere tekrar edildi. ");
             }
         }
     }
