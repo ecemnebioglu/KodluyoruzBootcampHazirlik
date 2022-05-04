@@ -56,7 +56,7 @@ public class Main {
             }
         }
 
-        System.out.println(randomNum);
+        System.out.println("Gizli Sayı : " + randomNum);
         
         if (!isWin) {
             System.out.println("Kaybettiniz ! ");
