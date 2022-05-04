@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
     static boolean isPalindrome(String str) {
         int i = 0, j = str.length() - 1;
@@ -39,6 +41,10 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        System.out.println(isPalindrome3("kayak"));
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("Palindromik kelime olup olmadığının kontrol edilmesi için bir kelime giriniz : ");
+        String str = sc.nextLine();
+        System.out.println(isPalindrome3(str));
     }
 }
