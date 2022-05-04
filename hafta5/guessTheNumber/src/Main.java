@@ -7,7 +7,6 @@ public class Main {
 
         Random random = new Random();
         int randomNum = random.nextInt(100);
-        System.out.println(randomNum);
 
         int[] wrongPrediction = new int[5];
         int right = 0;
@@ -57,6 +56,8 @@ public class Main {
             }
         }
 
+        System.out.println(randomNum);
+        
         if (!isWin) {
             System.out.println("Kaybettiniz ! ");
             if (!isIncorrect) {
