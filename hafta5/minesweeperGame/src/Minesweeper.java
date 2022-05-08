@@ -67,7 +67,7 @@ public class Minesweeper {
     void startGame() {
         int mineFree = 0;
         mineLocation();
-        printMineMap(mineMap);
+        //printMineMap(mineMap);
         System.out.println();
         while (game) {
             System.out.println();
