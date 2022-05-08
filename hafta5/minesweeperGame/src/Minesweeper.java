@@ -36,6 +36,7 @@ public class Minesweeper {
             for (int j = 0; j < arr[0].length; j++) {
                 if (mineMap[i][j] == -1) System.out.print(" * ");
                 else if (field[i][j] == 0) System.out.print(" - ");
+                else if (field[i][j] == -2) System.out.print(" - ");
                 else System.out.print(" " + field[i][j] + " ");
             }
             System.out.println();
@@ -66,16 +67,17 @@ public class Minesweeper {
 
     void startGame() {
         int mineFree = 0;
+        int fieldArea = fieldRow*fieldCol;
         mineLocation();
         //printMineMap(mineMap);
-        System.out.println();
+        //System.out.println();
         while (game) {
             System.out.println();
             System.out.println("========== °˖✧('▿')✧˖° ==========\n");
             printVisible(field);
             move();
             mineFree++;
-            if (mineFree == ((fieldRow * fieldCol) - fieldCol * fieldRow / 4)) {
+            if (mineFree == (fieldArea- fieldArea/ 4)) {
                 System.out.println("\n========== °˖✧(♡‿♡)✧˖° ==========\n\n\t\tYou Win!!!\n");
                 printMineMap(mineMap);
                 game = false;
@@ -90,11 +92,11 @@ public class Minesweeper {
         System.out.print("Sütunu : ");
         int col = sc.nextInt();
         if (row < 0 || row >= fieldRow) {
-            System.out.println("Geçersiz Satır\nYeni satır giriniz :  ");
+            System.out.print("Geçersiz Satır\nYeni satır giriniz :  ");
             row = sc.nextInt();
         }
         if (col < 0 || col >= fieldCol) {
-            System.out.println("Geçersiz Sütun\nYeni sütun giriniz :  ");
+            System.out.print("Geçersiz Sütun\nYeni sütun giriniz :  ");
             col = sc.nextInt();
         }
         if (mineMap[row][col] == -1) {
