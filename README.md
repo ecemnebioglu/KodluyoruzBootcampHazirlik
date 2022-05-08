@@ -1,2 +1,3 @@
 # KodluyoruzBootcampHazirlik
-Kodluyoruz Bootcamp Hazırlık
+Kodluyoruz Bootcamp Hazırlık kapsamında tanımlanan projelerden oluşan repo.
+3 haftalık proje içerisinde barındırmaktadır. 
